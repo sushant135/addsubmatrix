@@ -52,14 +52,25 @@ int main()
         for(d = 0; d < n; d++)
             sum[c][d] = first[c][d] + second[c][d];
 
-    
+    // printing the elements of the sum matrix
+    printf("\n\nThe sum of the two entered matrices is: \n\n");
+    for(c = 0; c < m; c++)
+    {
+        for(d = 0; d < n; d++)
+        {
+            printf("%d\t", sum[c][d]);
+        }
+        printf("\n");
     }
 
     /*
         finding the DIFFERENCE of the two matrices 
         and storing in another matrix difference of the same size
     */
-   
+    for(c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+            diff[c][d] = first[c][d] - second[c][d];
+
     // printing the elements of the diff matrix
     printf("\n\nThe difference(subtraction) of the two entered matrices is: \n\n");
     for(c = 0; c < m; c++)
